@@ -40,11 +40,11 @@ from paddleseg.cvlibs import manager
 # from paddleseg.utils import TimeAverager
 
 
-import paddle.fluid.core as core
+# Updated for modern PaddlePaddle API
 trt_precision_map = {
-    "int8": core.AnalysisConfig.Precision.Int8,
-    "fp32": core.AnalysisConfig.Precision.Float32,
-    "fp16": core.AnalysisConfig.Precision.Half
+    "int8": PrecisionType.Int8,
+    "fp32": PrecisionType.Float32,
+    "fp16": PrecisionType.Half
 }
 
 class DeployConfig:

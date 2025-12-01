@@ -5,3 +5,18 @@ $ cat .gitignore
 **/.DS_Store
 .DS_Store?
 
+# Python virtual environment
+venv/
+env/
+*.pyc
+
+# Model checkpoints and weights
+*.pth
+*.pth.tar
+*.ckpt
+**/checkpoints/
+
+# Temporary requirements files
+requirements_fixed.txt
+requirements_rest.txt
+
